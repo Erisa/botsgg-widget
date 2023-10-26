@@ -5,7 +5,7 @@ node_compat=true
 compatibility_date = "2022-11-22"
 
 kv_namespaces = [
-  { binding = "DATA_CACHE", id = "a96241821f184efeaebceb56409ff060", preview_id = "a96241821f184efeaebceb56409ff060" },
-  { binding = "SVG_CACHE", id = "9141a59adc0c46a295a7e45bcfbfa575", preview_id = "9141a59adc0c46a295a7e45bcfbfa575" },
-  { binding = "BUFFER_CACHE", id = "60a304ac442a44ef808e236d0efafe18", preview_id = "60a304ac442a44ef808e236d0efafe18" }
+  { binding = "DATA_CACHE", id = "eb46509ccf90436f802f6385e9935c6a", preview_id = "eb46509ccf90436f802f6385e9935c6a" },
+  { binding = "SVG_CACHE", id = "5f0f41024ee740f2b3e015b9654b313e", preview_id = "5f0f41024ee740f2b3e015b9654b313e" },
+  { binding = "BUFFER_CACHE", id = "f270543d170e4f3696a81e1beaa342a7", preview_id = "f270543d170e4f3696a81e1beaa342a7" }
 ]
