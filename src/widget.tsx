@@ -333,7 +333,7 @@ export async function getDefaultWidget(bot: BotsGGBot, ctx: RequestContext) {
         />
 
         {/* status */}
-        <circle cx={38} cy={38} r={5} fill={bot.online ? '#43B581' : '#747F8D'} stroke-width={2} stroke="#161921" />
+        <circle cx={38} cy={38} r={5} fill={bot.online || bot.status == 'online' ? '#43B581' : '#747F8D'} stroke-width={2} stroke="#161921" />
       </a>
 
       <g>
@@ -459,7 +459,7 @@ export async function getBannerWidget(bot: BotsGGBot, ctx: RequestContext) {
         />
 
         {/* status */}
-        <circle cx={29} cy={29} r={4} fill={bot.online ? '#43B581' : '#747F8D'} stroke-width={2} stroke="#161921" />
+        <circle cx={29} cy={29} r={4} fill={bot.online || bot.status == 'online' ? '#43B581' : '#747F8D'} stroke-width={2} stroke="#161921" />
       </a>
 
       <g>
