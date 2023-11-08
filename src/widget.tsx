@@ -60,14 +60,16 @@ async function createTextBox(text: string, opts: TextBoxOptions, ctx: RequestCon
         />
       )}
       {textData.d && <path d={textData.d} fill={opts.fill} opacity={opts.opacity} transform={`translate(${opts.x} ${opts.y})`} />}
-      {textData.paths?.slice(0, opts.maxLines).map((path, i) => (
-        <path
-          d={path.d}
-          fill={opts.fill}
-          opacity={opts.opacity}
-          transform={`translate(${opts.x} ${opts.y + textData.paths.slice(0, i).reduce((p, path) => p + path.metrics.height, 0)})`}
-        />
-      ))}
+      {textData.paths
+        ?.slice(0, opts.maxLines)
+        .map((path, i) => (
+          <path
+            d={path.d}
+            fill={opts.fill}
+            opacity={opts.opacity}
+            transform={`translate(${opts.x} ${opts.y + textData.paths.slice(0, i).reduce((p, path) => p + path.metrics.height, 0)})`}
+          />
+        ))}
     </g>
   );
 
@@ -182,13 +184,13 @@ export async function getDefaultWidget(bot: BotsGGBot, ctx: RequestContext) {
       },
       ctx
     );
-    headerX += serversText.textData.metrics.width + 10;
+    headerX += serversText.textData.metrics.width + 30;
   }
 
   const libraryText = await createTextBox(
     bot.libraryName,
     {
-      x: headerX + 34,
+      x: headerX + 18,
       y: 6,
       size: 11,
       fill: '#424A62'
