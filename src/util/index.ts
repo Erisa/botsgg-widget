@@ -49,7 +49,7 @@ export async function fetchBot(id: string, ctx: RequestContext) {
     headers: {
       'User-Agent': USER_AGENT,
       'X-Forwarded-For': ctx.req.headers.get('cf-connecting-ip'),
-      ...(ctx.env.BOTGSS_AUTH ? { Authorization: ctx.env.BOTGSS_AUTH } : {})
+      ...(ctx.env.BOTSGG_AUTH ? { Authorization: ctx.env.BOTSGG_AUTH } : {})
     }
   });
 

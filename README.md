@@ -10,6 +10,8 @@ Create a widget from a bot in bots.gg. Formerly from SnazzahAPI.
 
 ![](https://botsgg.snazzah.dev/widget/272937604339466240/banner.svg?w=400)
 
+![](https://botsgg.snazzah.dev/badge/272937604339466240/servers)
+
 </div>
 
 
@@ -22,6 +24,10 @@ Currently there are two widget types: `default` and `banner` as shown above. You
 
 ### Custom Width
 You can change the width of the widget using `w` in a query string. (ex. `?w=500` for 500 pixels)
+
+### Badges
+
+You can also use badges with `https://botsgg.snazzah.dev/badge/<client_id>/servers`. The available badge types are `servers`, `library`, and `status`. You can use the query parameters as listed in [the Shields.io documentation](https://shields.io/badges/endpoint-badge#:~:text=Query%20Parameters) except `logo`, `url`, `cacheSeconds`, and `link`.
 
 ## Attribution
 
